@@ -1,0 +1,4 @@
+<% @employees.each do |employee| %>
+  <h1><%= link_to "#{employee.first_name} #{employee.last_name}", employee_path(employee) %></h1>
+  <p>Dog: <%= employee.dog.name %></p>
+<% end %>

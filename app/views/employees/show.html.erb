@@ -1,0 +1,9 @@
+<h1>Employee Profile</h1>
+<img src="<%=@employee.img_url%>" alt="Profile Picture">
+<p>Name: <%= "#{@employee.first_name} #{@employee.last_name}" %></p>
+<p>Alias: <%= @employee.alias %></p>
+<p>Title: <%= @employee.title %></p>
+<p>Office: <%= @employee.office %></p>
+<p>Dog: <%= @employee.dog.name %></p>
+
+<%= link_to "Destroy", employee_path(@employee), method: :delete %>
